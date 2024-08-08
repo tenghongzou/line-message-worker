@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  symfony:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: symfony_app
+    volumes:
+      - .:/var/www
+    command: php bin/console app:send-message-to-line
+    stop_signal: SIGINT
+    stop_grace_period: 1m

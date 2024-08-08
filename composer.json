@@ -1,5 +1,5 @@
 {
-    "name": "zou/line-bot-message-worker",
+    "name": "zou/line-message-worker",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
